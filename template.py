@@ -1,6 +1,6 @@
 """
-    Author: JN.Wang
-    Created: 03/07/24
+    Author: soju-jsh
+    Created: (date)
 """
 
 from sys import stdin, stdout
@@ -8,7 +8,7 @@ input = stdin.readline
 # print = stdout.write
 
 '''
-    
+    (link)
 '''
         
 def main():

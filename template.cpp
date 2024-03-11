@@ -1,6 +1,6 @@
 /*
-    Author: JN.Wang
-    Created: 03/07/24
+    Author: soju-jsh
+    Created: (date)
 */
 
 #include <bits/stdc++.h>
@@ -9,12 +9,16 @@ using ll = long long;
 using pll = pair<ll, ll>;
 
 /*
-    Counting Rooms
-    https://cses.fi/problemset/task/1192
+    (link)
 */
 
-int main() {
-    ios_base::sync_with_stdio(false);
+void fast(){
+    ios::sync_with_stdio(false);
     cin.tie(NULL);
+}
 
+int main(){
+    fast();
+
+    
 }
