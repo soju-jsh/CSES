@@ -1,5 +1,5 @@
 /.vscode
 main.py
 main.cpp
-.exe
-.txt
+*.txt
+*.exe
