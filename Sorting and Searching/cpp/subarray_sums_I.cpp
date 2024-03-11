@@ -1,8 +1,8 @@
 /*
     Author: soju-jsh
-    Created: (date)
+    Created: 3.12.24
 
-    Problem: (link)
+    Problem: https://cses.fi/problemset/task/1660
 */
 
 #include <bits/stdc++.h>
@@ -38,5 +38,21 @@ int main(){
 
     // freopen("input.txt", "r", stdin);
     // freopen("output.txt", "w", stdout);
+
+    ll n, x; 
+    cin >> n >> x;
+    vll seq(n); 
+    vll_cin(seq);
+
+    ll cnt = 0;
     
+    set<ll> ss = {0};
+    ll total = 0;
+    REP(i, 0, n){
+        total += seq[i];
+        ss.insert(total);
+        if (total >= x && ss.find(total - x) != ss.end()) cnt++;
+    }
+
+    cout << cnt;
 }
