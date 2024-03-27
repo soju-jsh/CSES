@@ -3,6 +3,7 @@
     Created: 3.12.24
 
     Problem: https://cses.fi/problemset/task/1660
+    Result: AC
 */
 
 #include <bits/stdc++.h>

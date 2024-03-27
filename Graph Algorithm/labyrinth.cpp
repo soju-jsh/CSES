@@ -12,11 +12,7 @@ using pll = pair<ll, ll>;
     Labyrinth
     https://cses.fi/problemset/task/1193
     
-    Description:
-        >   You are given a map of a labyrinth, 
-            and your task is to find a path from start to end.
-            
-        >   You can walk left, right, up and down.
+    Result: AC
 */
 
 vector<pll> neighbors(vector<string> &mapa, pll position, ll rows, ll cols){

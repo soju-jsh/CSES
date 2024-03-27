@@ -11,6 +11,8 @@ using pll = pair<ll, ll>;
 /*
     Counting Rooms
     https://cses.fi/problemset/task/1192
+    
+    Result: AC
 */
 
 vector<pll> neighbors(vector<string> &mapa, pll position, ll rows, ll cols){
