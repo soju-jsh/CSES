@@ -1,10 +1,9 @@
 /*
     Author: soju-jsh
-    Created: (date)
+    Created: 03.28.24
 
-    Problem: (link)
-
-    Result: 
+    Problem: https://cses.fi/problemset/task/1068
+    Result: AC
 */
 
 #include <bits/stdc++.h>
@@ -13,13 +12,12 @@ using namespace std;
 // Datatype Shortcuts
 using ll = long long;
 using vll = vector<ll>;
-using vii = vector<int>;
+using vvll = vector<vll>;
 using pll = pair<ll, ll>;
  
 // Chars
 #define nl '\n'
 #define wp ' '
-#define INF INT_MAX
  
 // Macros
 #define ALL(x) x.begin(), x.end()
@@ -43,4 +41,16 @@ int main(){
     // freopen("input.txt", "r", stdin);
     // freopen("output.txt", "w", stdout);
     
+    ll N; 
+    cin >> N;
+
+    if (N == 1) cout << 1;
+    else 
+    {
+        while (N != 1){
+            cout << N << wp;
+            if (!(N % 2)) N /= 2;
+            else N = N * 3 + 1;
+        } cout << N;
+    }
 }
