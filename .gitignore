@@ -1,4 +1,5 @@
 /.vscode
+/drafts
 main.py
 main.cpp
 *.txt
