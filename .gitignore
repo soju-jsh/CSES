@@ -1,6 +1,6 @@
 /.vscode
 /drafts
 main.cpp
-template.cpp
 *.txt
 *.exe
+template.cpp
