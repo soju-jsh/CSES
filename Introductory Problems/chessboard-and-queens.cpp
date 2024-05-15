@@ -31,24 +31,26 @@ using tll = tuple<ll,ll,ll>;
 #define cREP(i, ii, t, increment) for (ll i = ii; i < t; i += increment)
 #define rREP(i, t) for (ll i = t - 1; i >= 0; i--)
 #define array_cin(arr) for (auto &i : arr) cin >> i;
-#define get_REP(tt) ll tt; cin >> tt; while (tt--)
 
 // Debugging purposes
 #define display(arr) for (auto i = arr.begin(); i != arr.end(); i++) cout << *i << wp; cout << nl;
 
 // FastIO
-void fast(){
+#pragma GCC diagnostic ignored "-Wunused-result"
+void fast(string file_name = ""){
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     
-    // freopen("input.txt", "r", stdin);
-    // freopen("output.txt", "w", stdout);
+    if (file_name.size()){
+        freopen((file_name + ".in").c_str(), "r", stdin);
+        freopen((file_name + ".out").c_str(), "w", stdout);
+    }
 }
 
 vs board(8);
 
 void backtrack(ll &ways, ll start, ll row = 0, vb col_taken = vb(8, false), usll diag1 = {}, usll diag2 = {}){
-    if (row == 7 and ways++)
+    if (row == 7 and ++ways)
         return;
 
     col_taken[start] = true;
