@@ -43,17 +43,16 @@ using um = unordered_map<T1, T2>;
 #define v_display(arr) {for (auto i = arr.begin(); i != arr.end(); i++) cout << *i << nl;}
 
 // FastIO
+const string file_name = "io";
 void fastIO(){
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-}
-
-const string file_name = "io";
-
-int main(){
-
     // freopen((file_name + ".in").c_str(), "r", stdin);
     // freopen((file_name + ".out").c_str(), "w", stdout);
+}
 
+int main(){
     fastIO();
+
+    
 }
